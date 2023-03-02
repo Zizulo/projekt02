@@ -1,0 +1,18 @@
+### PROTECT FILES ###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteRule wypożycz-samochód index.php
+RewriteRUle zaloguj-się strona_logowania.php
+RewriteRule zarejestruj-się strona_rejestracji.php
+RewriteRule zamówienie order.php
+RewriteRule regulamin-strony regulamin_strony.html
+RewriteRule dostępne-marki-sedanów sedan.html
+RewriteRule dostępne-marki-cuv'ów cuv.html
+RewriteRule dostępne-marki-suv'ów suv.html
+RewriteRule dostępne-marki-hatchbacków hatchback.html
+RewriteRule dostępne-marki-cabrioletów cabriolet.html
+RewriteRule dostępne-marki-coupe'ów coupe.html

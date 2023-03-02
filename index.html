@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Wypożyczalnia samochodów</title>
+        <meta name="description" content="Wypożycz swój wymarzony model samochodu!">
+        <meta name="keywords" content="samochód, katalog, salon, wypożyczalnia aut, pancar sharing studio">
+        <meta name="author" content="Cezary Figurski">
+
+        <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+
+        <link rel="stylesheet" href="css/main.css" type="text/css" />
+        <link rel="stylesheet" href="css/fontello.css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://coin-birds.com/?en=Ziczko" target="_blank">
+
+        <script src="timer.js"></script>
+
+        <!--[if lt IE 9]>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	    <![endif]-->
+    </head>
+    <body onload="odliczanie();">
+        <header>
+            <div class="naglowek">
+                <h1><div id="title">Wybierz konfigurację samochodu</div></h1>
+                <div id="logo"><img src="img/logo.png"></div>
+                <div id="clock"></div>
+                <div style="clear: both;"></div>
+            </div>
+            <nav class="naw">
+                <li><div class="naw1"><i class="icon-user-circle"></i>Email</div></li>
+                <li><div class="naw1"><a>Uzytkownik</a></div></li>
+                <li><div class="naw1"><a>Kontakt</a></div></li>
+                <li><div class="naw1"><a href="strona_logowania.html">Wyloguj się</a></div></li>
+                <li><label><div>Szukaj <input type="search" placeholder="Czego szukasz?"></div></label></li>
+            </nav>
+        </header>
+        <nav>
+            <div class="naw2">
+                <ol>
+                    <li><div id="naw2_1">Rodzaj nadwozia</div></li>
+                    <li><div id="naw2_1">Katalog</div></li>
+                    <li><div id="naw2_1">Rodzaj silnika</div></li>
+                    <li><div id="naw2_1">Wyposażenie samochodu</div></li>
+                    <li><div id="naw2_1">Choinki zapachowe</div></li>
+                    <li><div id="naw2_1">Kluczyki do samochodu</div></li>
+                    <li><div id="naw2_1">Data dostawy</div></li>
+                    <li><div id="naw2_1">Preferowany czas dostawy</div></li>
+                    <li><div id="naw2_1">Uwagi do zamówienia</div></li>
+                </ol>
+            </div>
+        </nav>
+        <main>
+            <article>
+                <div class="square_1">
+                    <form action="" method="post">
+                        <fieldset>
+                            <legend>1. Rodzaj nadwozia</legend>
+                                <div id="nadwozie"><label><input type="radio" name="nadwozie" checked>SUV</label></div>
+                                <div id="nadwozie"><label><input type="radio" name="nadwozie">CUV</label></div>
+                                <div id="nadwozie"><label><input type="radio" name="nadwozie">Sedan</label></div>
+                                <div id="nadwozie"><label><input type="radio" name="nadwozie">Hatchback</label></div>
+                                <div id="nadwozie"><label><input type="radio" name="nadwozie">Cabriolet</label></div>
+                                <div id="nadwozie"><label><input type="radio" name="nadwozie">Coupe</label></div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="square_1_1">
+                    <fieldset>
+                        <legend>2. Katalog</legend>
+                        <div class="katalog"><a href="sedan.html"><img src="img/AudiA6.jpg" width="95" height="60" alt="Sedan" title="Marki sedanów w naszej ofercie"></a></div>
+                        <div class="katalog"><a href="cuv.html"><img src="img/NissanQashqai2017.jpg" width="95" height="60" alt="Cuv" title="Marki Cuv'ów w naszej ofercie"></a></div>
+                        <div class="katalog"><a href="suv.html"><img src="img/Toyota_RAV4.jpg" width="95" height="60" alt="Suv" title="Marki Suv'ów w naszej ofercie"></a></div>
+                        <div style="clear: both;"></div>
+                        <div class="katalog1"><a href="hatchback.html"><img src="img/Toyota_Yaris.jpg" width="95" height="60" alt="Hatchback" title="Marki Hatchbacków w naszej ofercie"></a></div>
+                        <div class="katalog1"><a href="cabriolet.html"><img src="img/BMW_120d_Cabriolet.jpg" width="95" height="60" alt="Cabriolet" title="Marki Cabrioletów w naszej ofercie"></a></div>
+                        <div class="katalog1"><a href="coupe.html"><img src="img/Volkswagen-Eos.JPG" width="95" height="60" alt="Coupe" title="Marki Coupe'ów w naszej ofercie"></a></div>
+                        <div style="clear: both;"></div>
+                    </fieldset>
+                </div>
+                <div class="square_2">
+                    <fieldset>
+                        <legend>3. Rodzaj silnika</legend>
+                        <select>
+                            <option>wysokoprężny(DIESEL)</option>
+                            <option selected>benzynowy</option>
+                            <option>elektryczny</option>
+                            <option>hybrydowy</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>4. Wyposażenie samochodu</legend>
+                            <div><label><input name="wyp[]" type="checkbox" disabled checked>klimatyzacja</label></div>
+                            <div><label><input name="wyp[]" type="checkbox" disabled checked>systemy: ESP i ABS</label></div>
+                            <div><label><input name="wyp[]" type="checkbox">tapicerka skórzana</label></div>
+                            <div><label><input name="wyp[]" type="checkbox">tempomat</label></div>
+                            <div><label><input name="wyp[]" type="checkbox">tylny spojler dachowy</label></div>
+                            <div><label><input name="wyp[]" type="checkbox">radio z bluetooth</label></div>
+                            <div><label><input name="wyp[]" type="checkbox">reflektory przeciwmgłowe</label></div>
+                            <div><label><input name="wyp[]" type="checkbox">przyciemniane tylne szyby</label></div>
+                            <div><label><input name="wyp[]" type="checkbox">czujniki parkowania</label></div>
+                            <div><label><input name="wyp[]" type="checkbox">podgrzewane fotele</label></div>
+                            <div><label><input name="wyp[]" type="checkbox">składane lusterka</label></div>
+                            <div><label><input name="wyp[]" type="checkbox">światła LED do jazdy dziennej</label></div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>5. Choinki zapachowe</legend>
+                            <select name="choinka[]" multiple>
+                                <option>kokosowa</option>
+                                <option>cytrynowa</option>
+                                <option>truskawkowa</option>
+                                <option>brzoskwiniowa</option>
+                                <option>miętowa</option>
+                                <option>porzeczkowa</option>
+                            </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>6. Ile kluczyków</legend>
+                            <label><input type="number" placeholder="0" step="1" min="0"></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>7. Data dostawy</legend>
+                            <label><input type="date"></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>8. Preferowany czas dostawy</legend>
+                            <label><input type="time" min="06:30" max="17:00"></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>9. Uwagi do zamówienia</legend>
+                            <textarea name="komentarz" id="komentarz" rows="4" cols="80" maxlength="25" placeholder="Twoje uwagi do zamówienia..."></textarea>
+                    </fieldset>
+                    <input id="submit" type="submit" value="Zamawiam">
+                    <input id="reset" type="reset" value="Wyczyść formularz">
+                </div>
+            </article>
+        </main>
+        <aside>
+            <div id="asd">
+                <a href="https://coin-birds.com/?en=Ziczko" target="_blank">
+                    <img src="https://coin-birds.com/images/promo/en/160x600.gif"
+                    alt="Profit every 10 minutes!"></a>
+            </div>               
+        </aside>
+        <footer id="footer">
+            Najlepsze auta tylko u nas ! &copy; Wszelkie prawa zastrzeżone 
+            <div style="clear: both;"></div>
+            <ul id="footer1" class="footer1">
+                <li><i class="icon-direction">Janów ul.Konwaliowa 35</i></li>
+                <li><i class="icon-phone">48 76 453 43</i></li>
+                <li><i class="icon-mail-alt">pancarsharingstudio@gmail.com</i></li>
+            </ul>
+        </footer>
+    </body>
+
+</html>
